@@ -37,6 +37,16 @@ function lonelyinteger(a) {
     return (Array.from(nums))[0];
 }
 
+// Sumana's
+// function lonelyinteger(a) {
+//     const intSet = new Set();
+//     a.forEach(int => intSet.has(int) ? intSet.delete(int) : intSet.add(int));
+//     const [lonelyInt, ...rest] = intSet; // "rest" isn't needed but keeping for future syntax reference
+//     console.log(rest)
+//     return lonelyInt;
+// }
+
+
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
